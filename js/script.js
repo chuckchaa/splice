@@ -5,6 +5,14 @@ gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    // VH
+    let vh = window.innerHeight * 0.01;
+    const header = document.querySelector('.header');
+
+    document.header.style.setProperty('--vh', `${vh}px`);
+
+    // OTHER
     const menuBtn = document.querySelector('.menu-burger'),
         scrollBtn = document.querySelector('.more'),
         nav = document.querySelector('.nav'),
