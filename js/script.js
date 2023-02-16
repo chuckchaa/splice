@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .from(".intro__button", { x: -20, opacity: 0 });
 
     const titles = gsap.utils.toArray('.block-info__img');
-    console.log(titles);
+    
     titles.forEach(title => {
         gsap.from(title, {
             scrollTrigger: {
