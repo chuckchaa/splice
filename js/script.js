@@ -7,7 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 document.addEventListener('DOMContentLoaded', () => {
 
     const header = document.querySelector('.header');
-    header.style.minHeight = window.innerHeight;
+    const vh = window.innerHeight / 100;
+    header.style.setProperty('--vh', `${vh}px`);
 
     // OTHER
     const menuBtn = document.querySelector('.menu-burger'),
